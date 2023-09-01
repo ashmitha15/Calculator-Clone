@@ -1,0 +1,53 @@
+body{
+    background: linear-gradient(to right,#0575e6, #00f260 ); 
+    
+}
+
+.container{
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(auto-fill,minmax(70px,1fr));
+    margin: auto;
+    width: 350px;
+    padding-top: 200px;
+    height: 500px;
+    
+}
+
+.container > div {
+    background-color: lightblue;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.result{
+    grid-column-start:1;
+    grid-column-end :5;
+    font-weight: bold;
+    font-size: 20px;
+    color: white !important;
+    background-color: black !important;
+    text-align:right !important;
+    padding-right: 10px;
+   
+}
+
+.ac{
+    grid-column-start:1;
+    grid-column-end : 3;
+    
+}
+
+.equalto{
+    grid-column-start: 3;
+    grid-column-end:5;
+}
+
+button{
+    background-color:transparent;
+    border: none;
+    font-family:"Gotham Rounded", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black ;
+}
